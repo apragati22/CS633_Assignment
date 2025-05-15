@@ -1,9 +1,25 @@
-## Parallel Analysis of 3D Time Series Data (C + MPI)
-This repo contains the assignment code and report we had submitted for the course CS633 (Parallel Computing) offered by Prof. Preeti Malakar in 2024-25 Sem II at IIT Kanpur. 
-The assignment implements a parallel program using MPI in C to analyze time series data of a 3D spatial volume. The objective is to efficiently compute, for each time step: count of local minima, local maxima, the global minimum and maximum values. It was done in a team of 5 members and we received **101/100** marks (15 marks bonus for using Parallel I/O). The following are the team members:
+## Directory Structure
 
-- Pragati Agrawal ([apragati22](https://github.com/apragati22/))
-- Dhruv Gupta ([dhruvgupta22](https://github.com/dhruvgupta22/))
-- Kundan Kumar ([kundan9170](https://github.com/kundan9170/))
-- Anshu Yadav ([AnshuYadav0212](https://github.com/AnshuYadav0212))
-- Param Soni ([Paramsoni19](https://github.com/paramsoni19))
+When you unzip the project archive, the directory structure will look like this:
+
+```
+/Group01
+├── src.c                        The main source code
+├── Group01.pdf                  The report 
+├── plot.py                      The python script used for plotting
+├── parallel_IO_jobscripts       Contains the job scripts used (for src.c)
+├── parallel_IO_outputs          Contains the output files generated (by src.c)
+├── parallel_IO_plots            Contains the plots generated (for src.c)
+├── sequential_io                Contains the code,jobscripts & outputs for seq io 
+└── README.md          
+```
+
+## Usage of python script
+
+To use the `plot.py` script, ensure you have Python 3 installed on your system. The script takes a folder path as an argument, processes the data files in the specified folder, and generates plots.
+
+### Command
+
+```bash
+python3 plot.py ./folder_path
+```
